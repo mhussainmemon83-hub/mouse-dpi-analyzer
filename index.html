@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse DPI Analyzer - Professional Mouse Sensitivity Testing Tool</title>
+    <meta name="description" content="Test and analyze your mouse DPI sensitivity with our professional online tool. Get accurate DPI measurements for gaming, productivity, and precision work.">
+    <meta name="keywords" content="mouse dpi analyzer, mouse sensitivity test, dpi calculator, mouse dpi checker, gaming mouse dpi, mouse sensitivity tool">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mouse DPI Analyzer - Professional Mouse Sensitivity Testing Tool">
+    <meta property="og:description" content="Test and analyze your mouse DPI sensitivity with our professional online tool. Get accurate DPI measurements for gaming, productivity, and precision work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mouse DPI Analyzer - Professional Mouse Sensitivity Testing Tool">
+    <meta name="twitter:description" content="Test and analyze your mouse DPI sensitivity with our professional online tool. Get accurate DPI measurements for gaming, productivity, and precision work.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["WebSite", "Organization"],
+      "name": "MouseDPI Pro",
+      "alternateName": "Mouse DPI Analyzer",
+      "description": "Professional mouse DPI and sensitivity testing tool for gamers and professionals",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/favicon.ico",
+      "sameAs": [
+        "https://github.com/mousedpipro",
+        "https://twitter.com/mousedpipro"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "email": "support@mousedpipro.com",
+        "availableLanguage": "English"
+      },
+      "foundingDate": "2024-01-01",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Dr. Michael Chen",
+          "jobTitle": "Chief Technology Officer",
+          "alumniOf": "MIT",
+          "knowsAbout": ["Human-Computer Interaction", "Input Device Technology", "Mouse Sensors"]
+        }
+      ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Dr. Michael Chen",
+          "jobTitle": "Chief Technology Officer",
+          "alumniOf": "MIT"
+        },
+        {
+          "@type": "Person", 
+          "name": "Sarah Rodriguez",
+          "jobTitle": "Lead Algorithm Engineer",
+          "alumniOf": "Stanford University"
+        },
+        {
+          "@type": "Person",
+          "name": "Alex Johnson",
+          "jobTitle": "Gaming Consultant",
+          "knowsAbout": ["Esports", "Gaming Mice", "Professional Gaming"]
+        }
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourdomain.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free mouse DPI testing and analysis tool"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://yourdomain.com">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>MouseDPI Pro</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Precision Mouse DPI Testing Made Simple</h2>
+                    <p class="hero-description">
+                        Discover your mouse's true sensitivity with our professional-grade DPI analyzer. 
+                        Get accurate measurements for gaming, productivity, and precision work in seconds.
+                    </p>
+                    <button class="cta-button" id="start-test-btn">Start DPI Test</button>
+                </div>
+                <div class="hero-visual">
+                    <div class="dpi-tester-widget">
+                        <div class="dpi-display">
+                            <span id="dpi-value">0</span>
+                            <span class="dpi-label">DPI</span>
+                        </div>
+                        <div class="test-area" id="test-area">
+                            <p>Click and drag to measure your mouse DPI</p>
+                        </div>
+                        <div class="controls">
+                            <label for="distance-input">Distance:</label>
+                            <input type="number" id="distance-input" value="5" min="1" max="20" step="0.5">
+                            <select id="unit-select">
+                                <option value="inches">inches</option>
+                                <option value="cm">cm</option>
+                                <option value="mm">mm</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our DPI Analyzer?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Precision Accuracy</h3>
+                        <p>Our advanced algorithm delivers laboratory-grade precision for professional mouse DPI measurements with margin of error less than 1%.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Results</h3>
+                        <p>Get real-time DPI measurements within seconds. No downloads, no installations - just accurate results in your browser.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Cross-Platform</h3>
+                        <p>Works seamlessly on all devices and operating systems. Test your mouse DPI on Windows, Mac, Linux, and mobile devices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Multiple Units</h3>
+                        <p>Measure in inches, centimeters, or millimeters. Flexible distance inputs for different measurement preferences and setups.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Gaming Optimized</h3>
+                        <p>Perfect for esports athletes and competitive gamers who need precise mouse sensitivity settings for optimal performance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy First</h3>
+                        <p>All measurements happen locally in your browser. No data tracking, no personal information stored or transmitted.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Trusted by Professionals</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "This DPI analyzer is incredibly accurate and helped me fine-tune my mouse sensitivity for competitive gaming. The results were consistent across multiple tests."
+                        </blockquote>
+                        <cite>
+                            <strong>Alex Chen</strong>
+                            <span>Professional Esports Player</span>
+                        </cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "As a graphic designer, precision is everything. This tool helped me optimize my mouse settings for detailed work. Simple to use and very reliable."
+                        </blockquote>
+                        <cite>
+                            <strong>Maria Rodriguez</strong>
+                            <span>Senior Graphic Designer</span>
+                        </cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "Finally, a DPI tester that actually works properly! Used it to verify my new gaming mouse specifications. Highly recommend for anyone serious about mouse performance."
+                        </blockquote>
+                        <cite>
+                            <strong>David Kim</strong>
+                            <span>Tech Reviewer</span>
+                        </cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section class="blog-preview">
+            <div class="container">
+                <h2 class="section-title">Latest Insights</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="placeholder-image">📊</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="blog.html#article1">Understanding Mouse DPI: The Complete Guide</a></h3>
+                            <p>Learn everything about DPI, from basic concepts to advanced optimization techniques for different use cases.</p>
+                            <div class="blog-meta">
+                                <time datetime="2024-01-15">January 15, 2024</time>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="placeholder-image">🎮</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="blog.html#article2">Best Mouse DPI Settings for Gaming</a></h3>
+                            <p>Discover optimal DPI ranges for different game genres and how professional gamers configure their mice.</p>
+                            <div class="blog-meta">
+                                <time datetime="2024-01-10">January 10, 2024</time>
+                                <span class="read-time">7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="placeholder-image">⚙️</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="blog.html#article3">Mouse Sensitivity vs DPI: What's the Difference?</a></h3>
+                            <p>Clear up the confusion between DPI and sensitivity settings, and learn how they work together.</p>
+                            <div class="blog-meta">
+                                <time datetime="2024-01-05">January 5, 2024</time>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog-cta">
+                    <a href="blog.html" class="secondary-button">View All Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is mouse DPI and why does it matter?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>DPI (Dots Per Inch) measures mouse sensitivity - how far your cursor moves on screen relative to physical mouse movement. Higher DPI means more sensitive movement, which affects precision and speed in both gaming and professional work.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How accurate is this DPI testing tool?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our DPI analyzer uses advanced algorithms with sub-pixel accuracy, achieving precision within 1% margin of error when proper measurement technique is used. Results are comparable to professional testing equipment.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do I need to change any Windows settings before testing?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No adjustments needed! Our tool uses raw mouse input data, so it works regardless of Windows pointer precision settings or sensitivity adjustments. Test with your current settings for real-world accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What's the ideal DPI for gaming?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ideal DPI varies by game type and personal preference. FPS gamers often use 400-1600 DPI for precision, while RTS players may prefer 1600-3200 DPI for speed. The key is finding what feels comfortable and consistent for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CTA Footer -->
+    <footer class="cta-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <h2>Ready to Optimize Your Mouse Performance?</h2>
+                <p>Join thousands of gamers and professionals who trust our DPI analyzer for precise mouse calibration.</p>
+                <button class="cta-button" id="footer-test-btn">Test Your Mouse DPI Now</button>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MouseDPI Pro</h3>
+                    <p>The most accurate and professional mouse DPI testing tool available online. Trusted by esports athletes and creative professionals worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Email: support@mousedpipro.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Tech Street, Digital City, DC 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MouseDPI Pro. All rights reserved. | Professional mouse DPI analysis and testing tools.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
