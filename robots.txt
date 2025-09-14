@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://mouse-dpi-analyzer.vercel.app/sitemap.xml
 
 # Important pages for crawling
 Allow: /index.html
